@@ -19,7 +19,7 @@ fully qualified formula trusts only this formula, not every package the tap may
 contain:
 
 ```sh
-brew install DeliriumPulse/codetruss/codetruss
+brew install CodeTruss/codetruss/codetruss
 codetruss --version
 ```
 
@@ -55,7 +55,7 @@ uploads a receipt to CodeTruss. See the full [CLI documentation](https://codetru
 ## Integrity and release policy
 
 The formula downloads one immutable, versioned archive from the official
-[`DeliriumPulse/codetruss-cli`](https://github.com/DeliriumPulse/codetruss-cli)
+[`CodeTruss/codetruss-cli`](https://github.com/CodeTruss/codetruss-cli)
 release. Its SHA-256 is pinned in the formula. Pull requests run formula style,
 audit, install, and functional tests on supported macOS runners before merge.
 
@@ -72,6 +72,6 @@ The tap license does not relicense the CLI. See [NOTICE.md](NOTICE.md).
 
 ## Support and security
 
-- Installation or formula issue: [open a tap issue](https://github.com/DeliriumPulse/homebrew-codetruss/issues)
-- CLI issue: [open a CLI issue](https://github.com/DeliriumPulse/codetruss-cli/issues)
+- Installation or formula issue: [open a tap issue](https://github.com/CodeTruss/homebrew-codetruss/issues)
+- CLI issue: [open a CLI issue](https://github.com/CodeTruss/codetruss-cli/issues)
 - Security report: follow the private reporting instructions in [SECURITY.md](SECURITY.md)
