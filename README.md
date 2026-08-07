@@ -6,6 +6,12 @@ final Git diff, runs 13 deterministic analyzers and your repository
 verification commands, and writes a verifiable PASS, REVIEW_REQUIRED, or FAILED
 receipt.
 
+> **This repository is updated by release automation.** `Formula/codetruss.rb` is
+> bumped to each new CodeTruss CLI release as part of the release process, so hand
+> edits to the formula's `url` and `sha256` are overwritten by the next release.
+> Development happens in the private CodeTruss monorepo. Please open pull requests
+> and issues there instead.
+
 ## Install
 
 Homebrew 6 requires trust for software from third-party taps. Installing the
