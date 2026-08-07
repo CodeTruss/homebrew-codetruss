@@ -51,4 +51,14 @@ jobs:
         run: |
           brew install --build-from-source DeliriumPulse/codetruss/codetruss
           brew test DeliriumPulse/codetruss/codetruss
-          test "$(codetruss --version)" = "codetruss 0.2.38"
+
+          # Assert the installed binary reports the version the formula claims,
+          # derived from the formula rather than written here. A literal version
+          # in this file has to be edited in lockstep with every bump, and when
+          # someone forgets, the failure looks like a broken release instead of a
+          # stale assertion.
+          EXPECTED="$(brew info --json=v2 --formula DeliriumPulse/codetruss/codetruss \
+            | python3 -c 'import json,sys; print(json.load(sys.stdin)["formulae"][0]["versions"]["stable"])')"
+          test -n "$EXPECTED"
+          echo "formula version: $EXPECTED"
+          test "$(codetruss --version)" = "codetruss $EXPECTED"
