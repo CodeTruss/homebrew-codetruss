@@ -1,9 +1,10 @@
 # CodeTruss Homebrew tap
 
-This is the official Homebrew tap for the CodeTruss CLI, a local-first acceptance
-gate for AI-generated changes. It binds an agent task to the final Git diff, runs
-deterministic analyzers and repository verification, and writes a verifiable
-PASS, REVIEW_REQUIRED, or FAILED receipt.
+This is the official Homebrew tap for the CodeTruss CLI, the deterministic
+first-pass verification gate for AI-written code. It binds an agent task to the
+final Git diff, runs 13 deterministic analyzers and your repository
+verification commands, and writes a verifiable PASS, REVIEW_REQUIRED, or FAILED
+receipt.
 
 ## Install
 
