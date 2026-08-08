@@ -1,8 +1,8 @@
 class Codetruss < Formula
   desc "Deterministic first-pass verification gate for AI-written code"
   homepage "https://codetruss.com/cli"
-  url "https://github.com/CodeTruss/codetruss-cli/releases/download/v0.2.46/codetruss-cli-0.2.46.tgz"
-  sha256 "047dc9915d8c0594c913d1c29813edeecb7c71b0fd4e594ab0221139955ad643"
+  url "https://github.com/CodeTruss/codetruss-cli/releases/download/v0.2.50/codetruss-cli-0.2.50.tgz"
+  sha256 "1f5fc0d4633cda7d82f2c07e315496a9608bc15f01aa14cfc10aebbd88c977f5"
   license :cannot_represent
 
   depends_on "node"
